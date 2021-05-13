@@ -12,6 +12,23 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<script src="https://kit.fontawesome.com/dcc338bcfb.js" crossorigin="anonymous"></script>
+		<style>
+			* {
+            box-sizing: border-box;
+        	}
+			.left {
+				float: left;
+				width: 55%;
+			}
+			.right {
+				float: left;
+				width: 45%;
+				padding-bottom: 60px;
+			}
+			.skill {
+				padding-bottom: 20px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +38,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>About Me</span></a>
+						<a href="#About" class="fas fa-user"><span style="font-weight: 350;">About Me</span></a>
+						<a href="#work" class="fas fa-laptop"><span style="font-weight: 350;">Work</span></a>						
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 						<a href="https://github.com" class="fab fa-github"><span>Github</span></a>
 					</nav>
@@ -32,44 +50,82 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>Soobin Kim</h1>
+									<h1 style="text-shadow: 5px 5px 5px lightgray;">Soobin Kim</h1>
 									<p>Developer</p>
 									<p>tnqls9582@naver.com</p>
 								</header>
-								<a href="#work" class="jumplink pic">
+								<a href="#About" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 									<img src="/images/mac1.jpg" alt="" />
 								</a>
 							</article>
 
+						<!-- About Me -->
+							<article id="About" class="panel">
+								<header>
+									<div class="left">
+										<div>
+											<h1 style="text-shadow: 5px 5px 5px lightgray;">About Me</h1><br>											
+											<p>코틀린 응용 사물인터넷 서비스 개발자 양성과정 수료</p>
+											<p>세상을, 생활을 더 이롭게 만들고 싶은 신입 개발자</p><br>
+										</div>
+										<div>											
+											<h1 style="text-shadow: 5px 5px 5px lightgray;">Skills</h1><br>		
+											<div class="skill">							
+											<img src="/images/java.png" width="50px" height="50px">
+											<b style="color: rgb(128,161,245); font-size: 30px;">Java</b>
+											</div>
+											<div class="skill">
+											<i class="fab fa-js-square" style="font-size: 50px; color: rgb(246, 200, 68);"></i>
+											<b style="color: rgb(246, 200, 68); font-size: 30px;">Javascript</b><br>
+											</div>
+											<div class="skill">
+											<img src="/images/html-5.png" width="50px" height="50px">
+											<b style="color: rgb(233,88,43); font-size: 30px;">HTML</b><br>
+											</div>
+											<div class="skill">
+											<img src="/images/css-3.png" width="50px" height="50px">
+											<b style="color: rgb(74,148,236); font-size: 30px;">CSS</b><br>
+											</div>
+										</div>
+									</div>
+										<div class="right">
+										<img src="/images/pic01.jpg" width="100%" height="620px">
+									</div>
+								</header>
+							</article>
+
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>About Me</h2>
+									<h1 style="text-shadow: 5px 5px 5px lightgray;">Work</h1><br>
 								</header>
 								<p>
-									경험
+									
 								</p>
 								<section>
-									<div class="row">
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+									<div class="row">										
+										<div class="col-4 col-6-medium col-12-small">											
+											<a href="#" class="image fit"><img src="images/pic01.jpg"></a>
+											<p>Project1</p>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
+										<div class="col-4 col-6-medium col-12-small">											
 											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+											<p>Project2</p>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
+										<div class="col-4 col-6-medium col-12-small">											
 											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-										</div>
+											<p>Project3</p>
+										<!-- </div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-										</div>
+											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a> -->
+										<!-- </div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-										</div>
+											<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a> -->
+										<!-- </div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
 										</div>
@@ -87,7 +143,7 @@
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
+										</div> -->
 									</div>
 								</section>
 							</article>
@@ -95,7 +151,7 @@
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact Me</h2>
+									<h2 style="text-shadow: 5px 5px 5px lightgray;">Contact Me</h2>
 								</header>
 								<form action="#" method="post">
 									<div>
